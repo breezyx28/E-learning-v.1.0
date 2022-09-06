@@ -1,0 +1,179 @@
+/* Splash section */
+.floating-card-award {
+  position: absolute;
+  height: 80px;
+  width: 170px;
+  max-width: 220px;
+  right: -90px;
+  top: 33%;
+  background-color: white;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.3rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 0.75rem;
+}
+.floating-card-award-description {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  row-gap: 0.5rem;
+}
+.floating-purple-circle {
+  position: absolute;
+  top: 70%;
+  right: -1.5%;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 1rem;
+  background-color: var(--purple);
+  border-radius: 9999px;
+  box-shadow: #524fd545 0px 10px 50px;
+}
+.floating-purple-circle > svg {
+  width: 24px;
+}
+
+.floating-card-flag {
+  position: absolute;
+  height: 90px;
+  width: 200px;
+  max-width: 220px;
+  left: 0px;
+  top: 450px;
+  background-color: white;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 1rem;
+}
+.flag-img > img {
+  border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.2) 8px 8px 30px -5px;
+}
+.floating-card-flag-description {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  row-gap: 0.5rem;
+}
+.uil-mouse-alt {
+  font-size: x-large;
+}
+.mouse-scroll {
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 0;
+}
+.mouse-scroll:hover {
+  margin-top: 4px;
+}
+/* end */
+
+/* Experience */
+
+.left-experience {
+  max-width: 500px;
+}
+.exp-girl-card {
+  position: absolute;
+  top: 60%;
+  right: 25px;
+  width: 170px;
+  /* height: 180px; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem 1.5rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  transform: rotate(-20deg);
+}
+.exp-girl-card > * {
+  /* max-width: 140px; */
+  text-align: center;
+}
+.exp-card-flag > img {
+  border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.2) 8px 8px 30px -5px;
+}
+.exp-card-title {
+  max-width: 100px;
+}
+.exp-card-subtitle {
+  font-size: 0.55rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+/* End ----- Experience */
+
+/* Idea */
+.right-idea {
+  max-width: 500px;
+}
+.idea-girl-card {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 200px;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 47px 2rem 2rem 2rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  transform: rotate(20deg);
+}
+.idea-girl-card > * {
+  /* max-width: 140px; */
+  text-align: center;
+}
+.idea-card-heart {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  left: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink);
+  border-radius: 9999px;
+  box-shadow: #eda0a81a 0px 20px 25px -5px, #eda0a833 8px 8px 30px -5px;
+}
+.idea-card-heart > i {
+  /* top: ; */
+  font-size: xx-large;
+}
+.idea-card-content {
+  row-gap: 1rem;
+}
+.idea-card-content-title {
+  font-size: 0.65rem;
+  font-family: 'stolzl-bold';
+  color: var(--pink);
+}
+.idea-card-price {
+  /* max-width: 100px; */
+  font-size: 2.2rem;
+  font-family: 'stolzl-bold';
+}
+.idea-card-subtitle {
+  font-size: 0.55rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+/* End ----- Idea */
