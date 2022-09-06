@@ -177,3 +177,73 @@
   line-height: 1.5;
 }
 /* End ----- Idea */
+
+
+/* responsiveness */
+@media (max-width:1080px){
+  html,body{
+    overflow-x: hidden;
+  }
+  .nav-wrapper{
+    display: none;
+  }
+  .responsive-nav-wrapper{
+    width: 100%;
+    transition: 0.24s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .resp-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .resp-nav > i{
+    font-size: xx-large;
+    cursor: pointer;
+    transition: 0.42s;
+  }
+  .resp-navigation > li > a {
+    color: #1f1f11;
+    font-size: 1.5rem;
+    font-family: "stolzl-bold";
+    transition: 0.24s;
+  }
+  .resp-navigation > ul > li > a:hover {
+    color: #1a1969 !important;
+  }
+  .resp-nav-black-layer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+  .resp-nav-menu{
+    position: fixed;
+    top: 0;
+    left: -400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    height: 100vh;
+    width: 400px;
+    padding: 1rem 2rem;
+    background-color: white;
+    transition: 0.24s;
+    z-index: 99999;
+  }
+  .resp-nav-menu .uil-times{
+    font-size: xx-large;
+    cursor: pointer;
+    transition: 0.42s;
+  }
+  .menu-dispaly{
+    left: 0 !important;
+    transition: 0.24s;
+  }
+  .menu-hide{
+    left: -400px !important;
+    transition: 0.24s;
+  }
+}

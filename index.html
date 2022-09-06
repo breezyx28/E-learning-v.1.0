@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
 
-
+    <!-- scripts here -->
     <script src="assets/js/main.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="container">
+
+        <!-- mune -->
         <div class="nav-wrapper w-full">
           <div class="left flex justify-between">
             <div class="brand">LOGO</div>
@@ -37,6 +39,39 @@
               <button type="button" class="start-today bg-purple text-white">
                 start today
               </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- responsive menu -->
+        <div class="responsive-nav-wrapper w-full">
+          <div class="resp-nav">
+            <div class="brand">LOGO</div>
+            <i class="uil uil-bars text-purple" id="menu-open"></i>
+          </div>
+          <div class="resp-nav-black-layer"></div>
+          <div class="resp-nav-menu">
+            <div class="flex justify-between">
+              <div class="brand">LOGO</div>
+              <i class="uil uil-times text-purple" id="menu-close"></i>
+            </div>
+            <ul class="resp-navigation flex flex-column gap-y-1.5">
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="#">blog</a></li>
+            </ul>
+            <div class="flex flex-column justify-center items-center gap-y-1">
+              <div class="right-wrapper flex gap-x-0.5 items-center text-center">
+                <a href="/">Login</a>
+                <small>/</small>
+                <a href="/">Sign up</a>
+              </div>
+              <div>
+                <button type="button" class="start-today bg-purple text-white">
+                  start today
+                </button>
+              </div>
             </div>
           </div>
         </div>
