@@ -1,3 +1,4 @@
+// NAV BAR INTERACTIONS
 let menuOpen = document.getElementById('menu-open');
 let menuClose = document.getElementById('menu-close');
 
@@ -14,7 +15,6 @@ menuOpen.addEventListener('click',(e)=>{
     
 })
 
-
 menuClose.addEventListener('click',(e)=>{
 
         respNav.classList.add('menu-hide')
@@ -23,3 +23,16 @@ menuClose.addEventListener('click',(e)=>{
         blackLayer.style.display = "none";
         blackLayer.style.backgroundColor = null;
 })
+// close menu when click on link
+document.querySelectorAll('.resp-navigation>li').forEach((item)=>{
+    
+    item.addEventListener('click',(e)=>{
+        respNav.classList.add('menu-hide')
+        respNav.classList.remove('menu-dispaly')
+        
+        blackLayer.style.display = "none";
+        blackLayer.style.backgroundColor = null;
+    })
+});
+// END NAV BAR
+

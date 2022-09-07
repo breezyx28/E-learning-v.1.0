@@ -180,14 +180,27 @@
 
 
 /* responsiveness */
+@media (min-width: 1080px){
+  .nav-wrapper{
+    display: flex !important;
+  }
+  .responsive-nav-wrapper{
+    display: none !important;
+  }
+}
 @media (max-width:1080px){
   html,body{
     overflow-x: hidden;
+  }
+  .section{
+    height: auto;
+    min-height: 100vh;
   }
   .nav-wrapper{
     display: none;
   }
   .responsive-nav-wrapper{
+    display: inline;
     width: 100%;
     transition: 0.24s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
@@ -245,5 +258,13 @@
   .menu-hide{
     left: -400px !important;
     transition: 0.24s;
+  }
+
+  /* Splash */
+  .splash-wrapper{
+    flex-direction: column-reverse;
+    justify-items: center;
+    row-gap: 0;
+    column-gap: 4rem;
   }
 }
