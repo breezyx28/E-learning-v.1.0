@@ -44,6 +44,9 @@
   /* Shadows */
   --shadow-lg: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   --shadow-card: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+  /* Special utilities */
+  --hero-girl-size:500px;
 }
 
 @font-face {
@@ -474,8 +477,9 @@ header {
 }
 .services-cards {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* justify-content: space-between; */
   column-gap: 1rem;
 }
 .service-card {

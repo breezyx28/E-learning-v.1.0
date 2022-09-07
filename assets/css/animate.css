@@ -1,4 +1,7 @@
 /* Splash section */
+.resp-hero-girl-size{
+  width: var(--hero-girl-size);
+}
 .floating-card-award {
   position: absolute;
   height: 80px;
@@ -266,5 +269,28 @@
     justify-items: center;
     row-gap: 0;
     column-gap: 4rem;
+  }
+  .hero-girl-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .resp-hero-girl-size{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+
+  /* Services */
+  .services-cards{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width:668px){
+  .services-cards{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 2rem;
   }
 }
