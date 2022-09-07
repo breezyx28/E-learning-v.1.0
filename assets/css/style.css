@@ -528,6 +528,7 @@ header {
 /* Experience */
 .experience-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   justify-items: center;
   column-gap: 5rem;

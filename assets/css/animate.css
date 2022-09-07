@@ -195,6 +195,9 @@
   html,body{
     overflow-x: hidden;
   }
+  .text-xxl{
+    font-size: 1.75rem;
+  }
   .section{
     height: auto;
     min-height: 100vh;
@@ -286,9 +289,42 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
   }
+  /* end */
+
+  /* Experiences */
+  .experience.section{
+    min-height: unset;
+    padding-bottom: 4rem;
+  }
+  .experience-wrapper{
+    flex-direction: column;
+    row-gap: 3rem;
+    column-gap: unset;
+  }
+  .exp-girl-card{
+    visibility: hidden;
+  }
+  /* end */
+
+  /* Idea */
+  .idea.section{
+    min-height: unset;
+    padding-bottom: 4rem;
+  }
+  .idea-wrapper{
+    flex-direction: column-reverse;
+    row-gap: 3rem;
+    column-gap: unset;
+  }
+  .idea-girl-card{
+    visibility: hidden;
+  }
+  /* end */
 }
 
 @media (max-width:668px){
+
+  /* Services */
   .services-cards{
     grid-template-columns: repeat(1, minmax(0, 1fr));
     row-gap: 2rem;
