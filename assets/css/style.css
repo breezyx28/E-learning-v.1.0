@@ -49,6 +49,12 @@
   --hero-girl-size:500px;
 }
 
+@media (max-width: 668px) {
+  :root{
+    --hero-girl-size:100%;
+  }
+}
+
 @font-face {
   font-family: 'stolzl-bold';
   src: url(../fonts/Stolzl-Bold.ttf);
@@ -441,9 +447,9 @@ header {
   row-gap: 4rem;
 }
 .hero-girl {
-  width: 500px;
-  max-width: 500px;
-  min-width: 500px;
+  width: var(--hero-girl-size);
+  max-width: var(--hero-girl-size);
+  min-width: var(--hero-girl-size);
 }
 .right-wrapper {
   /* height: 100%; */
@@ -672,6 +678,10 @@ svg {
   padding: 0 2rem 2rem 2rem;
   border-radius: 1.5rem;
 }
+/* on big screen */
+.resp-blog-slider{
+  display: none;
+}
 /* end */
 
 /* Subscribe */
@@ -731,7 +741,8 @@ svg {
   padding-bottom: 2rem;
 }
 .footer-brand {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-xl);
+  font-family: 'stolzl-bold';
 }
 .footer-links > ul > li > a {
   color: var(--muted);
