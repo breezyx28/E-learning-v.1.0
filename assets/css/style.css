@@ -618,6 +618,9 @@ svg {
   font-size: 0.65rem;
   line-height: 1.5;
 }
+.mySwiper{
+  display: none;
+}
 /* End */
 
 /* Blog */
